@@ -6,7 +6,7 @@
 
 [Desktop Entry]
 Comment=Enhanced interactive Python qtconsole
-Exec=ipython qtconsole
+Exec=bash -i -c "ipython qtconsole --ConsoleWidget.font_family=\"Source Code Pro\""
 GenericName[en_US]=Python shell
 GenericName=Python shell
 #Icon=gnome-netstatus-idle
@@ -23,9 +23,11 @@ Actions=Matplotlib;Matplotlibinline;
 Name=Matplotlib
 #Exec=ipython qtconsole --matplotlib
 #Exec=ipython qtconsole --matplotlib --colors=linux --ConsoleWidget.font_family="Source Code Pro"
-Exec=ipython qtconsole --ConsoleWidget.font_family="Source Code Pro" --matplotlib
+Exec=bash -i -c "ipython qtconsole --ConsoleWidget.font_family=\"Source Code Pro\" --matplotlib"
 
 [Desktop Action Matplotlibinline]
 Name=Matplotlib (inline plots)
 #Exec=ipython qtconsole --matplotlib=inline
-Exec=ipython qtconsole --ConsoleWidget.font_family="Source Code Pro" --matplotlib=inline
+Exec=bash -i -c "ipython qtconsole --ConsoleWidget.font_family=\"Source Code Pro\" --matplotlib=inline"
+
+
