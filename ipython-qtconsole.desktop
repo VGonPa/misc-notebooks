@@ -1,0 +1,31 @@
+# Downloaded From: https://github.com/ipython/ipython/blob/master/examples/IPython%20Kernel/ipython-qtconsole.desktop
+# With modifications to use dark background theme
+
+# If you want ipython to appear in a linux app launcher ("start menu"), install this by doing:
+# sudo desktop-file-install ipython-qtconsole.desktop
+
+[Desktop Entry]
+Comment=Enhanced interactive Python qtconsole
+Exec=ipython qtconsole
+GenericName[en_US]=Python shell
+GenericName=Python shell
+#Icon=gnome-netstatus-idle
+Icon=ipython
+Name[en_US]=IPython Qt console
+Name=IPython Qt console
+Categories=Development;Utility;
+StartupNotify=false
+Terminal=false
+Type=Application
+Actions=Matplotlib;Matplotlibinline;
+
+[Desktop Action Matplotlib]
+Name=Matplotlib
+#Exec=ipython qtconsole --matplotlib
+#Exec=ipython qtconsole --matplotlib --colors=linux --ConsoleWidget.font_family="Source Code Pro"
+Exec=ipython qtconsole --ConsoleWidget.font_family="Source Code Pro" --matplotlib
+
+[Desktop Action Matplotlibinline]
+Name=Matplotlib (inline plots)
+#Exec=ipython qtconsole --matplotlib=inline
+Exec=ipython qtconsole --ConsoleWidget.font_family="Source Code Pro" --matplotlib=inline
